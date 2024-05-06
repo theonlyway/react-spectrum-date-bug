@@ -4,6 +4,7 @@ import { useDateFormatter } from "@react-aria/i18n";
 import { today, getLocalTimeZone } from "@internationalized/date";
 import { useState } from "react";
 
+export const dynamic = "force-dynamic";
 export default function Home() {
   const formatter = useDateFormatter({ dateStyle: "full" });
   const [selectedDay, setSelectedDay] = useState(
